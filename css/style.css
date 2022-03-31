@@ -1,0 +1,90 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+	background-color: #09BCFA;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.container {
+	display: flex;
+}
+
+.container div {
+	width: 25px;
+	height: 25px;
+	border: 1px solid black;
+}
+
+.container div:hover {
+	filter: brightness(200%);
+	cursor: pointer;
+
+	transition: transform .2s;
+	transform: scale(1.5);
+}
+
+/* Cores */
+.branco {
+	background-color: #FEFDFF;
+}
+
+.preto {
+	background-color: #151E1A;
+}
+
+.azul {
+	background-color: #09BCFA;
+}
+
+.azulClaro {
+	background-color: #07FBFF;
+}
+
+.rosa {
+	background-color: #DE77A8;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=- Media queries =-=-=-=-=-=-=-=-=-=-=-=- */
+@media (max-width:850px) {
+	.container div {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (max-width:650px) {
+	.container div {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media (max-width:490px) {
+	.container div {
+		width: 12px;
+		height: 12px;
+	}
+}
+
+@media (max-width:400px) {
+	.container div {
+		width: 8px;
+		height: 8px;
+	}
+}
+
+@media (max-width:300px) {
+	.container div {
+		width: 5px;
+		height: 5px;
+	}
+}
